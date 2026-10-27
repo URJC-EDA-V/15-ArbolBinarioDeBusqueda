@@ -47,7 +47,7 @@ public interface Map<K,V> {
 
     /**
      * Removes the entry with the specified key, if present, and returns
-     * its associated value. Otherwise does nothing and returns null.
+     * its associated value. Otherwise, does nothing and returns null.
      * @param key  the key whose entry is to be removed from the map
      * @return the previous value associated with the removed key, or null if no such entry exists
      */
