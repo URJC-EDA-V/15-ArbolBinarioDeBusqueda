@@ -131,9 +131,10 @@ public class TreeMap<K, V> extends AbstractSortedMap<K, V> {
         Position<Entry<K, V>> position = treeSearch(root(), key);
         if (isExternal(position)) {
             // No hemos encontrado la clave, por lo que debemos insertar una nueva entrada
-            // TODO: Implementar el método
-            throw new UnsupportedOperationException("Not supported yet.");
+            expandExternal(position, newEntry);
+            return null;
         } else {
+            // Hemos encontrado la clave, por lo que debemos reemplazar el valor asociado
             // TODO: Implementar el método
             throw new UnsupportedOperationException("Not supported yet.");
         }
