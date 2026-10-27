@@ -15,7 +15,7 @@ import java.util.*;
  * <p>
  * Internamente, el TreeMap utiliza un LinkedBinaryTree para almacenar las entradas.
  * El único detalle a tener en cuenta es la propiedad de relación: cada entrada se almacena en un nodo interno,
- * y la clave de cada nodo es mayor que la de su hijo izquierdo y menos que la de su hijo derecho.
+ * y la clave de cada nodo es mayor que la de su hijo izquierdo y menor que la de su hijo derecho.
  * Además, los nodos hoja (externos) no almacenan entradas y actúan como nodos centinela para facilitar las operaciones de inserción y eliminación.
  * Es decir, los nodos hoja son nodos nulos que indican el final de una rama del árbol.
  * <p>
