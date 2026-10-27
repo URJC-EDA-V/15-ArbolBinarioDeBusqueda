@@ -30,7 +30,7 @@ public interface SortedMap<K,V> extends Map<K,V>{
 
     /**
      * Returns the entry having the greatest key (or null if map is empty).
-     * @return entry with greatest key (or null if map is empty)
+     * @return entry with the greatest key (or null if map is empty)
      */
     Entry<K,V> lastEntry();
 
@@ -44,19 +44,19 @@ public interface SortedMap<K,V> extends Map<K,V>{
     Entry<K,V> ceilingEntry(K key) throws IllegalArgumentException;
 
     /**
-     * Returns the entry with greatest key less than or equal to given key
+     * Returns the entry with the greatest key less than or equal to given key
      * (or null if no such key exists).
      * @param key  the target key
-     * @return entry with greatest key less than or equal to given (or null if no such entry)
+     * @return entry with the greatest key less than or equal to given (or null if no such entry)
      * @throws IllegalArgumentException if the key is not compatible with the map
      */
     Entry<K,V> floorEntry(K key) throws IllegalArgumentException;
 
     /**
-     * Returns the entry with greatest key strictly less than given key
+     * Returns the entry with the greatest key strictly less than given key
      * (or null if no such key exists).
      * @param key  the target key
-     * @return entry with greatest key strictly less than given (or null if no such entry)
+     * @return entry with the greatest key strictly less than given (or null if no such entry)
      * @throws IllegalArgumentException if the key is not compatible with the map
      */
     Entry<K,V> previousEntry(K key) throws IllegalArgumentException;
